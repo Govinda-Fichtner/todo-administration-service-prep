@@ -1,0 +1,6 @@
+-r requirements.txt
+
+# development requirements
+pytest==3.9.1
+PyHamcrest==1.9.0
+Ptpython==2.0.3
