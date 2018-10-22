@@ -1,0 +1,14 @@
+sudo: required
+
+services:
+  - docker
+
+env:
+  global:
+    - IMAGE_NAME=gfichtner/docker-serverless
+
+before_script:
+  - docker pull "$IMAGE_NAME" || true
+
+script:
+  - docker run --rm "$IMAGE_NAME" serverless --version
